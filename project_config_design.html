@@ -79,7 +79,7 @@
                                         <tbody>
                                             <tr>
                                                 <td>시뮬레이션 타입</td>
-                                                <td>R&H</td>
+                                                <td>Optimization</td>
                                             </tr>
                                             <tr>
                                                 <td>차량 타입</td>
@@ -109,7 +109,7 @@
                         </aside>
                     </div>
                     <div class="buttons">
-                        <a href="./dashboard.html?loading=1" class="button is-dark is-fullwidth">이전화면</a>
+                        <a href="./project_new_design_4.html" class="button is-dark is-fullwidth">이전화면</a>
                         <a href="./dashboard.html?loading=1" class="button is-danger is-fullwidth">시뮬레이션 시작</a>
                     </div>
                 </div>
@@ -120,104 +120,141 @@
                         <h2 class="title is-5">Solving Condition</h2>
                         <hr>
 
-                        <div class="condition-list">
-                            <div class="condition-item">
-                                <label>
-                                    <input type="checkbox" checked>
-                                    Parallel wheel travel
-                                </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
+                        <h3 class="title is-7">Simulation Interval</h3>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Start time</div>
+                                <div class="input-list">
+                                    <input type="text" class="input" value="0">
                                 </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
                             </div>
-                            <div class="condition-item">
-                                <label>
-                                    <input type="checkbox" checked>
-                                    Opposite wheel travel
-                                </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
+                            <p class="help">Start time of simulation</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Stop time</div>
+                                <div class="input-list">
+                                    <input type="text" class="input" value="0">
                                 </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
                             </div>
-                            <div class="condition-item">
-                                <label>
-                                    <input type="checkbox">
-                                    Longitudinal compliance
-                                </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
-                            </div>
-                            <div class="condition-item">
-                                <label>
-                                    <input type="checkbox">
-                                    Lateral compliance
-                                </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
-                            </div>
-                            <div class="condition-item">
-                                <label>
-                                    <input type="checkbox">
-                                    Parallel wheel travel
-                                </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
-                            </div>
+                            <p class="help">Stop time of simulation</p>
                         </div>
 
+                        <h3 class="title is-7">Output</h3>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Interval Length</div>
+                                <div class="input-list">
+                                    <input type="text" class="input" value="0">
+                                </div>
+                            </div>
+                            <p class="help">Distance between output points (if > 0)</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Number of Intervals</div>
+                                <div class="input-list">
+                                    <input type="text" class="input" value="0">
+                                </div>
+                            </div>
+                            <p class="help">Number of intervals for output (if > 0 and Interval length == 0)</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Load results</div>
+                                <div class="input-list">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="help">Load simulation results for plotting (only for Single Simulation)</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Results from</div>
+                                <div class="input-list">
+                                    <div class="control">
+                                        <label class="radio">
+                                            <input type="radio" name="answer">
+                                            dsfinal.txt
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="answer">
+                                            result file
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="help">Getting criteria values (only for Parallel Simulation mode)</p>
+                        </div>
+                        
+                        <h3 class="title is-7">Intergration</h3>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Algorithm</div>
+                                <div class="input-list">
+                                    <div class="select is-small">
+                                        <select>
+                                            <option>Select dropdown</option>
+                                            <option>With options</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="help">Intergration method to be used</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Tolerance</div>
+                                <div class="input-list">
+                                    <input type="text" class="input" value="0">
+                                </div>
+                            </div>
+                            <p class="help">Relative error tolerance</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Fixed intergrate step</div>
+                                <div class="input-list">
+                                    <input type="text" class="input" value="0">
+                                </div>
+                            </div>
+                            <p class="help">Step size for fixed step intergrators</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Translate model</div>
+                                <div class="input-list">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="help">Before each simulation (only for Single Simulation)</p>
+                        </div>
+                        
+                        <h3 class="title is-7">Intergration failed</h3>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Set criteria</div>
+                                <div class="input-list">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="help">Set criteria to user defined default value when simulation</p>
+                        </div>
+                        <div class="property-item">
+                            <div class="item-body">
+                                <div class="item-title">Default value</div>
+                                <div class="input-list">
+                                    <input type="text" class="input" value="0">
+                                </div>
+                            </div>
+                            <p class="help">Default value for criteria when simulation fails</p>
+                        </div>
 
                     </div>
 

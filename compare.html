@@ -263,7 +263,9 @@
                     </div>
                 </div>
                 <div class="column">
-                    <h2 class="title is-5">미리보기</h2>
+                    <div class="title-bar">
+                        <h2 class="title is-5">미리보기</h2>
+                    </div>
                     <div class="box compare-project">
                         <div class="project-info">
                             <dl>
@@ -424,12 +426,12 @@
                 $(this).parents("li").find(".item-menu").toggleClass("is-active");
             })
 
-            $(".button-data").click(function(e) {
+            $(".button-data").click(function (e) {
                 e.preventDefault();
                 $(".modal").addClass("is-active");
             })
 
-            $(".modal-background, button.delete, .button-close").click(function(e) {
+            $(".modal-background, button.delete, .button-close").click(function (e) {
                 e.preventDefault();
                 $(".modal").removeClass("is-active");
             })

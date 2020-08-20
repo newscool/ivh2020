@@ -79,27 +79,11 @@
                                         <tbody>
                                             <tr>
                                                 <td>시뮬레이션 타입</td>
-                                                <td>R&H</td>
+                                                <td>xEV</td>
                                             </tr>
                                             <tr>
-                                                <td>차량 타입</td>
-                                                <td>Truck</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Front Axle</td>
+                                                <td>Configuration</td>
                                                 <td>1</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Front Suspension Type</td>
-                                                <td>1</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Rear Axle</td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Rear Suspension Type</td>
-                                                <td>2</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -117,104 +101,58 @@
                     <h2 class="title is-5">시뮬레이션 설정</h2>
 
                     <div class="box property">
-                        <h2 class="title is-5">Solving Condition</h2>
+                        <h2 class="title is-5">동력 성능 검토</h2>
                         <hr>
 
                         <div class="condition-list">
                             <div class="condition-item">
                                 <label>
                                     <input type="checkbox" checked>
-                                    Parallel wheel travel
+                                    최고 속도(모터 Max rpm기준)
                                 </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
+                                <!-- <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame</p> -->
                             </div>
                             <div class="condition-item">
                                 <label>
                                     <input type="checkbox" checked>
-                                    Opposite wheel travel
+                                    등판 성능
                                 </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
+                                <p class="help">구배, 요구가속도</p>
                             </div>
                             <div class="condition-item">
                                 <label>
-                                    <input type="checkbox">
-                                    Longitudinal compliance
+                                    <input type="checkbox" checked>
+                                    WOT발진
                                 </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
+                                <p class="help">구배, 요구가속도</p>
                             </div>
                             <div class="condition-item">
                                 <label>
-                                    <input type="checkbox">
-                                    Lateral compliance
+                                    <input type="checkbox" checked>
+                                    추월가속
                                 </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
+                                <p class="help">구배, 요구가속도</p>
                             </div>
                             <div class="condition-item">
                                 <label>
-                                    <input type="checkbox">
-                                    Parallel wheel travel
+                                    <input type="checkbox" checked>
+                                    등판 순항
                                 </label>
-                                <div class="field">
-                                    <img src="./img/new_image_3.png" alt="">
-                                    <label>Bump travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="0.05">
-                                    </div>
-                                    <label>Rebound travel</label>
-                                    <div class="control">
-                                        <input type="text" class="input is-small" value="-0.05">
-                                    </div>
-                                </div>
-                                <p class="help">Position of origin of left stabilizer frame, resolved in vehicleFrame
-                                </p>
+                                <p class="help">구배, 요구가속도</p>
+                            </div>
+                            <div class="condition-item">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    평지 순항
+                                </label>
+                                <p class="help">구배, 요구가속도</p>
+                            </div>
+                            <div class="condition-item">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    목표 시나리오 주행
+                                </label>
+                                <p class="help">구배, 요구가속도</p>
                             </div>
                         </div>
 

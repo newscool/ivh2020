@@ -79,7 +79,7 @@
                                         <tbody>
                                             <tr>
                                                 <td>시뮬레이션 타입</td>
-                                                <td>R&H</td>
+                                                <td>Optimization</td>
                                             </tr>
                                             <tr>
                                                 <td>차량 타입</td>
@@ -112,301 +112,183 @@
                             <ul class="menu-list">
                                 <li>
                                     <ul>
-                                        <li><a class="is-active">Front Suspension</a></li>
-                                        <li><a>Rear Suspension</a></li>
+                                        <li><a class="is-active">Tuners</a></li>
+                                        <li><a href="./project_new_design_2.html">Criteria</a></li>
+                                        <li><a href="./project_new_design_3.html">Preferences</a></li>
+                                        <li><a href="./project_new_design_4.html">DOE</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </aside>
                     </div>
-                    <a href="./project_config.html" class="button is-danger is-fullwidth">시뮬레이션 설정</a>
+                    <a href="./project_config_design.html" class="button is-danger is-fullwidth">시뮬레이션 설정</a>
                 </div>
                 <div class="column project-body">
                     <h2 class="title is-5">속성</h2>
 
                     <div class="box property">
                         <div class="title-bar">
-                            <h2 class="title is-5">Axle Geometry <span class="info"><i
+                            <h2 class="title is-5">Inputs <span class="info"><i
                                         class="fas fa-question-circle"></i></span></h2>
-                            <div class="field">
-                                <a href="" class="button button-data-load is-small"><i class="fas fa-share"></i>불러오기</a>
-                                <a href="" class="button button-data-save is-small"><i class="fas fa-save"></i>저장하기</a>
-                                <a href="" class="button button-data-import is-small"><i class="fas fa-file-upload"></i>JSON 업로드</a>
-                            </div>
                         </div>
                         <hr>
-                        <h3 class="title is-7">Hard points, left hand side</h3>
-
                         <div class="property-item">
                             <div class="item-body">
-                                <div class="item-title">r0H_1</div>
+                                <div class="item-title">Inputs</div>
                                 <div class="input-list">
-                                    <input type="text" class="input" value="-0.00434">
-                                    <input type="text" class="input" value="0.992995">
-                                    <input type="text" class="input" value="-0.42584">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        설계 변수 범위 불연속 행렬 사용 여부
+                                    </label>
                                 </div>
                             </div>
-                            <p class="help">Position of left hub center, resolved in vehicleFrame</p>
-                        </div>
-
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">r0H_1</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="-0.00434">
-                                    <input type="text" class="input" value="0.992995">
-                                    <input type="text" class="input" value="-0.42584">
-                                </div>
-                            </div>
-                            <p class="help">Position of left hub center, resolved in vehicleFrame</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">r0H_1</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="-0.00434">
-                                    <input type="text" class="input" value="0.992995">
-                                    <input type="text" class="input" value="-0.42584">
-                                </div>
-                            </div>
-                            <p class="help">Position of left hub center, resolved in vehicleFrame</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">r0H_1</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="-0.00434">
-                                    <input type="text" class="input" value="0.992995">
-                                    <input type="text" class="input" value="-0.42584">
-                                </div>
-                            </div>
-                            <p class="help">Position of left hub center, resolved in vehicleFrame</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">r0H_1</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="-0.00434">
-                                    <input type="text" class="input" value="0.992995">
-                                    <input type="text" class="input" value="-0.42584">
-                                </div>
-                            </div>
-                            <p class="help">Position of left hub center, resolved in vehicleFrame</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">r0H_1</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="-0.00434">
-                                    <input type="text" class="input" value="0.992995">
-                                    <input type="text" class="input" value="-0.42584">
-                                </div>
-                            </div>
-                            <p class="help">Position of left hub center, resolved in vehicleFrame</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">r0H_1</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="-0.00434">
-                                    <input type="text" class="input" value="0.992995">
-                                    <input type="text" class="input" value="-0.42584">
-                                </div>
-                            </div>
-                            <p class="help">Position of left hub center, resolved in vehicleFrame</p>
+                            <p class="help">Use discrete tuner matrix for discrete tuner values</p>
                         </div>
 
                     </div>
+
+
                     <div class="box property">
                         <div class="title-bar">
-                            <h2 class="title is-5">Leaf Spring <span class="info"><i
+                            <h2 class="title is-5">Tuner Parameters <span class="info"><i
                                         class="fas fa-question-circle"></i></span></h2>
                             <div class="field">
                                 <a href="" class="button button-data-load is-small"><i class="fas fa-share"></i>불러오기</a>
                                 <a href="" class="button button-data-save is-small"><i class="fas fa-save"></i>저장하기</a>
-                                <a href="" class="button button-data-import is-small"><i class="fas fa-file-upload"></i>JSON 업로드</a>
+                                <a href="" class="button button-data-import is-small"><i
+                                        class="fas fa-file-upload"></i>JSON 업로드</a>
                             </div>
                         </div>
                         <hr>
-                        <h3 class="title is-7">Pretension</h3>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">f0</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="15300">
-                                </div>
-                            </div>
-                            <p class="help">Pretension</p>
-                        </div>
 
-                        <h3 class="title is-7">General stiffnesses</h3>
                         <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">c_v</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="353000">
+                            <div class="item-body is-fullwidth">
+                                <div class="apply-table">
+                                    <table class="table is-bordered is-fullwidth">
+                                        <thead>
+                                            <tr>
+                                                <th>name</th>
+                                                <th>active</th>
+                                                <th>value</th>
+                                                <th>scale ToBounds</th>
+                                                <th>min</th>
+                                                <th>max</th>
+                                                <th>equidistant</th>
+                                                <th>discrete values</th>
+                                                <th>unit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td class="btn">
+                                                    <a class="button is-danger"><i class="fas fa-times"></i></a>
+                                                    <a class="button is-success"><i class="fas fa-plus"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td class="btn">
+                                                    <a class="button is-danger"><i class="fas fa-times"></i></a>
+                                                    <a class="button is-success"><i class="fas fa-plus"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td class="btn">
+                                                    <a class="button is-danger"><i class="fas fa-times"></i></a>
+                                                    <a class="button is-success"><i class="fas fa-plus"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <p class="help">Vertical stiffness</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">c_l</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="353000">
-                                </div>
-                            </div>
-                            <p class="help">Lateral stiffness</p>
-                        </div>
-
-                        <h3 class="title is-7">Brushing stiffnesses</h3>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">cS1_x</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="353000">
-                                </div>
-                            </div>
-                            <p class="help">Stiffness in x direction of front eye</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">cS1_y</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="353000">
-                                </div>
-                            </div>
-                            <p class="help">Stiffness in x direction of front eye</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">cS1_z</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="353000">
-                                </div>
-                            </div>
-                            <p class="help">Lateral stiffness</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">cS2_y</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="353000">
-                                </div>
-                            </div>
-                            <p class="help">Stiffness in x direction of front eye</p>
-                        </div>
-                        <div class="property-item">
-                            <div class="item-body">
-                                <div class="item-title">cS2_r</div>
-                                <div class="input-list">
-                                    <input type="text" class="input" value="353000">
-                                </div>
-                            </div>
-                            <p class="help">Lateral stiffness</p>
+                            <!-- <p class="help">Torque vs Speed[RPM]</p> -->
                         </div>
 
                     </div>
+
                     <div class="box property">
                         <div class="title-bar">
-                            <h2 class="title is-5">Damper <span class="info"><i
+                            <h2 class="title is-5">Discrete matrix <span class="info"><i
                                         class="fas fa-question-circle"></i></span></h2>
                             <div class="field">
                                 <a href="" class="button button-data-load is-small"><i class="fas fa-share"></i>불러오기</a>
                                 <a href="" class="button button-data-save is-small"><i class="fas fa-save"></i>저장하기</a>
-                                <a href="" class="button button-data-import is-small"><i class="fas fa-file-upload"></i>JSON 업로드</a>
+                                <a href="" class="button button-data-import is-small"><i
+                                        class="fas fa-file-upload"></i>JSON 업로드</a>
                             </div>
                         </div>
                         <hr>
-                        <h3 class="title is-7">Damper table</h3>
-                        <div class="apply-table">
-                            <table class="table is-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Velocity[m/s]</th>
-                                        <th>Force[N]</th>
-                                        <!-- <th>Delete</th> -->
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input class="input is-small" type="text" value="0.1">
-                                        </td>
-                                        <td>
-                                            <input class="input is-small" type="text" value="-800">
-                                        </td>
-                                        <td class="btn">
-                                            <a class="button is-danger"><i class="fas fa-times"></i></a>
-                                            <a class="button is-success"><i class="fas fa-plus"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class="input is-small" type="text" value="0.1">
-                                        </td>
-                                        <td>
-                                            <input class="input is-small" type="text" value="-800">
-                                        </td>
-                                        <td class="btn">
-                                            <a class="button is-danger"><i class="fas fa-times"></i></a>
-                                            <a class="button is-success"><i class="fas fa-plus"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class="input is-small" type="text" value="0.1">
-                                        </td>
-                                        <td>
-                                            <input class="input is-small" type="text" value="-800">
-                                        </td>
-                                        <td class="btn">
-                                            <a class="button is-danger"><i class="fas fa-times"></i></a>
-                                            <a class="button is-success"><i class="fas fa-plus"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class="input is-small" type="text" value="0.1">
-                                        </td>
-                                        <td>
-                                            <input class="input is-small" type="text" value="-800">
-                                        </td>
-                                        <td class="btn">
-                                            <a class="button is-danger"><i class="fas fa-times"></i></a>
-                                            <a class="button is-success"><i class="fas fa-plus"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class="input is-small" type="text" value="0.1">
-                                        </td>
-                                        <td>
-                                            <input class="input is-small" type="text" value="-800">
-                                        </td>
-                                        <td class="btn">
-                                            <a class="button is-danger"><i class="fas fa-times"></i></a>
-                                            <a class="button is-success"><i class="fas fa-plus"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class="input is-small" type="text" value="0.1">
-                                        </td>
-                                        <td>
-                                            <input class="input is-small" type="text" value="-800">
-                                        </td>
-                                        <td class="btn">
-                                            <a class="button is-danger"><i class="fas fa-times"></i></a>
-                                            <a class="button is-success"><i class="fas fa-plus"></i></a>
-                                        </td>
-                                    </tr>
 
-                                </tbody>
-                            </table>
-                            <img src="./img/table.png" alt="">
+                        <div class="property-item">
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <div class="select is-small">
+                                        <select>
+                                            <option>Rows</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <div class="select is-small">
+                                        <select>
+                                            <option>Columns</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-body is-fullwidth">
+                                <div class="apply-table">
+                                    <table class="table is-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                                <td><input type="text" class="input is-small" value="0"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- <p class="help">Torque vs Speed[RPM]</p> -->
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -425,7 +307,7 @@
         <div class="modal-card">
             <header class="modal-card-head">
                 <div class="modal-card-title">
-                    Steering System
+                    Motor
                 </div>
                 <button class="delete" aria-label="close"></button>
             </header>
@@ -757,7 +639,7 @@
             </footer>
         </div>
     </div>
-    
+
     <div class="modal modal-data-import">
         <div class="modal-background"></div>
         <div class="modal-card">
@@ -878,7 +760,7 @@
                 e.preventDefault();
                 $(".modal-data-save").addClass("is-active");
             })
-           
+
             $(".button-data-import").click(function (e) {
                 e.preventDefault();
                 $(".modal-data-import").addClass("is-active");

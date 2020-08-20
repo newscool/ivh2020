@@ -27,6 +27,10 @@ i {
     margin-right: 5px;
 }
 
+hr {
+    margin: 1.2rem 0 !important;
+}
+
 .container .box {
     border-radius: 0 !important;
     box-shadow: none !important;
@@ -156,24 +160,55 @@ nav.top .util>a {
 
 
 .make-project {
+    position: relative;
+    padding: 0 !important;
     text-align: center;
-    font-size: 15px;
-    transition: all .3s;
 }
 
 .make-project h3 {
-    font-weight: 600;
-    font-size: 20px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1;
     margin-top: 2rem;
     margin-bottom: .5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    color: #fff !important;
 }
 
+.make-project .image {
+    position: relative;
+    overflow: hidden;
+}
+.make-project .image::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
+}
 .make-project img {
     display: block;
-    margin: -1.25rem;
-    width: calc(100% + 2.5rem);
-    max-width: none;
-    font-size: 0;
+    transition: transform 1.2s;
+}
+.make-project:hover img {
+    transform: scale(1.1);
+}
+.make-project .buttons {
+    padding: 1rem 0;
+}
+.make-project .button {
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+    font-size: 11px !important;
 }
 
 .box.dash-board {
@@ -377,6 +412,7 @@ nav.top .util>a {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
+    height: 30px;
 }
 
 .title-bar h2 {
@@ -479,23 +515,31 @@ nav.top .util>a {
     margin: 0 auto;
 }
 
-/* storage */
+/* left menu */
 .menu-label:not(:first-child) {
     margin-top: 2rem !important;
 }
 .menu-list a {
-    font-size: 14px;
+    font-size: 15px;
 }
 .menu-info {
-    font-size: 13px;
+    font-size: 12px;
 }
 .menu-info .title {
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 10px !important;
 }
-.menu-info li span {
-    display: inline-block;
-    width: 90px;
+.menu-info .desc {
+    margin-bottom: 20px;
+    color: #999;
+}
+.menu-info .table td {
+    border-color: #eee;
+    color: #555;
+}
+.menu-info .table td:nth-of-type(2) {
+    text-align: center;
+    color: #999;
 }
 .menu-info .value {
     color: #000;
@@ -506,7 +550,7 @@ nav.top .util>a {
 }
 .project-menu.is-fixed {
     position: fixed;
-    top: 30px;
+    top: 20px;
 }
 .project-body.is-fixed {
     margin-left: 300px;
@@ -546,21 +590,31 @@ nav.top .util>a {
     align-items: center;
 }
 .property-item .item-body .item-title {
-    width: 100px;
+    width: 160px;
     font-size: 14px;
 }
 .property-item .item-body .input-list {
     display: flex;
 }
-.property-item .item-body .input-list input {
+.property-item .item-body .input-list input:not([type=checkbox]):not([type=radio]) {
     margin-right: .5rem;
     height: 1.8rem;
     font-size: 15px;
 }
 .property-item .help {
-    padding-left: 100px;
+    padding-left: 160px;
     font-size: 11px;
     color: #999;
+}
+.property-item > .is-fullwidth + .help {
+    padding-left: 0 !important;
+}
+.property-item > .is-fullwidth .table.is-fullwidth {
+    table-layout: fixed;
+    margin-right: 0;
+}
+.property-item > .is-fullwidth .table input {
+    width: 100%;
 }
 
 .property .apply-table {
@@ -568,9 +622,24 @@ nav.top .util>a {
     align-items: center;
 }
 .property .apply-table .table {
-    width: 30%;
+    /* width: 30%; */
     margin-right: 30px;
     margin-bottom: 0;
+}
+.property .apply-table .table .btn {
+    border: 0;
+    vertical-align: middle;
+}
+.property .apply-table .table .btn .button {
+    padding: .45rem;
+    font-size: 11px;
+    height: 1.5rem;
+}
+.property .apply-table .table .btn .button i {
+    margin: 0;
+}
+.help.p0 {
+    padding: 0;
 }
 
 /* condition */
@@ -580,25 +649,33 @@ nav.top .util>a {
     flex-wrap: wrap;
 }
 .condition-list .condition-item {
-    width: calc(25% - 20px);
-    border: 1px solid #888;
+    width: calc(33.3% - 20px);
     margin: 10px;
-    /* padding: 2rem; */
     transition: opacity .2s;
+    border: 1px solid #ddd;
+    /* background-color: #f1f1f1; */
+}
+.condition-list.is-xev .condition-item {
+    width: 100%;
+}
+.condition-list.is-xev .condition-item img {
+    width: auto;
 }
 .condition-list .condition-item.is-false {
     opacity: .4;
 }
 .condition-list .condition-item > label {
     width: 100%;
-    background-color: #eee;
+    background-color: #f6f6f6;
     padding: .5rem 1rem;
     color: #000;
     font-weight: 600;
-    font-size: 13px !important;
+    font-size: 14px !important;
     display: flex;
     align-items: center;
     cursor: pointer;
+    height: 2.5rem;
+    margin-bottom: 1rem;
 }
 .condition-list .condition-item > label input {
     margin-right: 5px;
@@ -723,7 +800,7 @@ nav.top .util>a {
     text-align: center;
 }
 .modal-card-foot {
-    justify-content: flex-end !important;
+    justify-content: center !important;
 }
 
 .modal-info .images {
@@ -745,6 +822,96 @@ nav.top .util>a {
 }
 .modal-info dd {
     font-size: 14px;
+}
+
+.modal-data-load .modal-card {
+    width: 1000px;
+}
+
+.parameter-screen {
+    height: 500px;
+}
+.parameter-screen > .column > div {
+    border: 1px solid #ddd;
+    height: 100%;
+}
+.parameter-list .category,
+.parameter-content .content-title{
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #999;
+}
+.parameter-list li:first-of-type a {
+    border-top: 1px solid #eee;
+}
+.parameter-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.parameter-list a:hover {
+    background-color: #f6f6f6;
+}
+.parameter-list span {
+    font-size: 13px;
+    line-height: 1;
+    margin: 0 !important;
+    color: #999;
+}
+.parameter-list .title {
+    margin-right: auto !important;
+    color: #333;
+}
+.parameter-list span:not(.title) {
+    margin-left: 15px !important;
+}
+.parameter-content {
+    position: relative;
+    overflow-y: scroll;
+}
+.parameter-content hr {
+    margin: 10px 0 !important;
+}
+.parameter-content .data {
+    padding: 20px;
+}
+.parameter-content .data table .name {
+    background-color: #f6f6f6;
+}
+.parameter-content .raw {
+    padding: 20px;
+}
+.parameter-content .raw h3 {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.parameter-content .raw-data {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #888;
+}
+.parameter-content .buttons {
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+}
+.parameter-content .buttons .button {
+    margin-bottom: 0;
+}
+
+.modal-data-save .parameter-screen,
+.modal-data-import .parameter-screen {
+    border: 1px solid #ddd;
+    height: auto;
 }
 
 
@@ -814,4 +981,33 @@ nav.top .util>a {
 .progress-bar dd {
     font-size: 11px;
     color: #999;
+}
+
+.table-list input.is-small {
+    width: 40px;
+    text-align: center;
+}
+.table-list .table caption {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    display: flex !important;
+    align-items: center;
+}
+.checkbox input {
+    margin-right: 5px;
+}
+
+.table th {
+    line-height: 1.2;
+}
+
+.xev-config img {
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border: 1px solid #eee;
 }
