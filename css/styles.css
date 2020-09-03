@@ -1021,4 +1021,5 @@ nav.top .util>a {
 }
 .suspension-popup img {
     border-radius: 5px;
+    display: none;
 }

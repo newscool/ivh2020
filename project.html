@@ -357,7 +357,18 @@
                                 </div>
                             </div>
                                 <div class="suspension-popup">
-                                    <img>
+                                    <img src="./img/suspension_f_1.png">
+                                    <img src="./img/suspension_f_2.png">
+                                    <img src="./img/suspension_f_3.png">
+                                    <img src="./img/suspension_f_4.png">
+                                    <img src="./img/suspension_f_5.png">
+                                    <img src="./img/suspension_f_6.png">
+                                    <img src="./img/suspension_r_1.png">
+                                    <img src="./img/suspension_r_2.png">
+                                    <img src="./img/suspension_r_3.png">
+                                    <img src="./img/suspension_r_4.png">
+                                    <img src="./img/suspension_r_5.png">
+                                    <img src="./img/suspension_r_6.png">
                                 </div>
                         </div>
                         <div class="option-2">
@@ -441,16 +452,17 @@
             })
 
             $(".is-suspension > button").hover(function () {
-                var _index = $(this).index() + 1;
+                var _index = $(this).index();
                 if ($(this).hasClass("is-front")) {
-                    $(".suspension-popup > img").attr("src", "./img/suspension_f_" + _index + ".png");
+                    $(".suspension-popup > img").eq(_index).show();
 
                 } else {
-                    $(".suspension-popup > img").attr("src", "./img/suspension_r_" + _index + ".png");
+                    $(".suspension-popup > img").eq(6 + _index).show();
                 }
                 $(".suspension-popup").show();
             }, function () {
                 $(".suspension-popup").hide();
+                $(".suspension-popup > img").hide();
             })
 
             $(".is-suspension > button").mousemove(function(e) {
