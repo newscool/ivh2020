@@ -1011,3 +1011,14 @@ nav.top .util>a {
     margin: 1rem 0;
     border: 1px solid #eee;
 }
+
+.suspension-popup {
+    position: absolute;
+    display: none;
+    /* bottom: 120px; */
+    /* right: 30px; */
+    z-index: 99;
+}
+.suspension-popup img {
+    border-radius: 5px;
+}
